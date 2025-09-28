@@ -1,5 +1,5 @@
 pipeline {
-    agent any // 어떤 에이전트에서든 실행 가능
+    agent any // 어떤 에이전트에서든 실행 가능한
 
     tools {
         maven 'maven 3.9.11' // Jenkins에 등록된 Maven 3.9.11을 사용
@@ -66,8 +66,8 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${REMOTE_USER}@$
         docker run -d --name ${CONTAINER_NAME} -p ${PORT}:${PORT} ${DOCKER_IMAGE}
 ENDSSH
 """
-    }
-}
+                }
+            }
         }        
     }
 }
