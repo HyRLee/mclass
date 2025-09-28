@@ -33,7 +33,7 @@ pipeline {
         stage('Maven Build') {
             steps{
                 // 테스트는 건너뛰고 Maven 빌드
-                sh 'mvn clean pacakage -DskipTests' 
+                sh 'mvn clean package -DskipTests' 
                 // sh 'echo Hello' : 리눅스 명령어 실행
             }
         }
