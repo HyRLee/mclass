@@ -40,7 +40,7 @@ pipeline {
         stage('Prepare Jar') {
             steps{ 
                 // 빌드 결과물인 JAR 파일을 지정한 이름(app.jar)으로 복사
-                sh 'cp target/demo-0.0.1-SNAPSHOT.jar ${JAR_FiLE_NAME}'
+                sh 'cp target/demo-0.0.1-SNAPSHOT.jar ${JAR_FILE_NAME}'
             }
         }
         // .jar파일을 spring서버로 보냄
